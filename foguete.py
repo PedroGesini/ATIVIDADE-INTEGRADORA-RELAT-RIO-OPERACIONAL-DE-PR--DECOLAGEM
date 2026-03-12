@@ -83,12 +83,12 @@ print("\n---------------------------------------------------------------------\n
 
 #definindo os status como OK ou N/G com if e else
 
-status_temp_int = "OK" if temperatura_interna >= temperatura_intermin and temperatura_intermax else "N/G"
-status_temp_ext = "OK" if temperatura_externa >= temperatura_externamin and temperatura_externamax else "N/G"
-status_energia = "OK" if energia >= energiamin and energiamax else "N/G"
-status_pressao = "OK" if pressao_tanque >= pressao_tanquemin and pressao_tanquemax else "N/G"
-status_integridade = "OK" if integridade_estrutural >= integridade_estruturalmin and integridade_estruturalmax else "N/G"
-status_modulos = "OK" if modulos_criticos >= modulos_criticosmin and modulos_criticosmax else "N/G"
+status_temp_int = "OK" if temperatura_interna <= temperatura_intermin and temperatura_intermax else "N/G"
+status_temp_ext = "OK" if temperatura_externa <= temperatura_externamin and temperatura_externamax else "N/G"
+status_energia = "OK" if energia <= energiamin and energiamax else "N/G"
+status_pressao = "OK" if pressao_tanque <= pressao_tanquemin and pressao_tanquemax else "N/G"
+status_integridade = "OK" if integridade_estrutural <= integridade_estruturalmin and integridade_estruturalmax else "N/G"
+status_modulos = "OK" if modulos_criticos <= modulos_criticosmin and modulos_criticosmax else "N/G"
 #-----------------------------------------------------------------------------------------------------------------------
 #exibir se os status da Aurora esta OK ou N/G
 print(f"""
