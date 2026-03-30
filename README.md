@@ -13,7 +13,7 @@ Lógica do algoritmo
 O projeto aplica dois conceitos fundamentais de engenharia e computação:
 
 - Fail-Safe: todos as variáveis analisadas devem estar dentro dos conformes, caso contrário, a decolagem é abortada imediatamente para preservar a tripulação.
-- Autonomia pós-voo: o algoritmo realiza dois processos de conversão, primeiro transforma a carga atual, que está em porcentagem, em valores absolutos de kWh. Posteriormente, ocorre a devida conversão para Joules, se enquadrando no Sistema Internacional de Unidades. Com a carga atual em kWh, o sistema realiza o cálculo de autonomia, em que se subtrai da carga atual, as perdas energéticas e o consumo de decolagem. Para a missão ser realizada, a carga atual não deve ser inferior a 6.000 kWh (60%) e a autonomia deve ser maior que zero.
+- Autonomia pós-voo: o algoritmo realiza dois processos de conversão. O primeiro transforma a carga atual, que está em porcentagem, em valores absolutos de kWh. Posteriormente, ocorre a devida conversão para Joules, se enquadrando no Sistema Internacional de Unidades. Com a carga atual em kWh, o sistema realiza o cálculo de autonomia, em que se subtrai da carga atual, as perdas energéticas e o consumo de decolagem. Para a missão ser realizada, a carga atual não deve ser inferior a 6.000 kWh (60%) e a autonomia deve ser maior que zero.
 
 Cenário A: abortagem da missão
 
